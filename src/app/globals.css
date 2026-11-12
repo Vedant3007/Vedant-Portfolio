@@ -4,7 +4,7 @@
   color-scheme: dark;
   --background: #0a0b0e;
   --surface: #111318;
-  --border: #1e222b;
+  --border: #232834;
   --foreground: #eceef2;
   --muted: #8a91a0;
   --accent: #4c8dff;
@@ -13,11 +13,11 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --background: #fafafb;
+  --background: #f4f5f8;
   --surface: #ffffff;
-  --border: #e4e6eb;
+  --border: #d5d9e2;
   --foreground: #14161b;
-  --muted: #5b6272;
+  --muted: #576074;
   --accent: #2563eb;
   --accent-foreground: #ffffff;
 }
@@ -34,16 +34,44 @@
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* CSS-only scroll reveal: no JavaScript, no hydration branch.
+   Browsers without scroll-driven animations simply show the content. */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
 }
 
 :focus-visible {

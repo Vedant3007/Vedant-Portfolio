@@ -32,14 +32,17 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="#work">Explore My Work</Button>
+            <Button href="/projects">Explore My Work</Button>
             <Button href={siteConfig.resumeUrl} newTab variant="secondary">
               Download Resume
             </Button>
           </div>
 
-          <div className="mt-6">
-            <StatusPill>{heroContent.availability}</StatusPill>
+          <div className="mt-6 space-y-2">
+            <StatusPill>{siteConfig.availability.summary}</StatusPill>
+            <p className="text-xs leading-5 text-muted">
+              {siteConfig.availability.reach} · {siteConfig.availability.start}
+            </p>
           </div>
 
           <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-border pt-8">

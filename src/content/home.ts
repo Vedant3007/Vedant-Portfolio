@@ -2,7 +2,6 @@ export const heroContent = {
   headline: "Reliable systems, from the service desk to the cloud.",
   summary:
     "Computer Science graduate with hands-on experience in enterprise IT operations across 16 sites, AWS infrastructure and containerised application deployment.",
-  availability: "Adelaide · Open to graduate and entry-level IT roles",
   stats: [
     { value: "16", label: "Australian sites supported" },
     { value: "60+", label: "Incidents resolved monthly, within SLA" },
@@ -21,7 +20,7 @@ export const capabilities: ReadonlyArray<{
     icon: "server",
     title: "Enterprise IT operations",
     description:
-      "L1–L3 support across 16 sites using ServiceNow and BMC Remedy, with Active Directory, Microsoft 365 and endpoint provisioning.",
+      "L1-L3 support across 16 sites using ServiceNow and BMC Remedy, with Active Directory, Microsoft 365 and endpoint provisioning.",
   },
   {
     icon: "cloud",

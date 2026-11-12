@@ -1,11 +1,12 @@
-import { ArrowUpRight, Briefcase, GitBranch, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/BrandIcons";
 import { contactLinks, siteConfig, type ContactIcon } from "@/content/site";
 
 const icons = {
   phone: Phone,
   mail: Mail,
-  linkedin: Briefcase,
-  github: GitBranch,
+  linkedin: LinkedInIcon,
+  github: GitHubIcon,
 } as const satisfies Record<ContactIcon, unknown>;
 
 const iconBox =
@@ -50,9 +51,12 @@ export function ContactCards() {
           </span>
           <span className="min-w-0 flex-1">
             <span className="block font-mono text-[11px] uppercase tracking-widest text-muted">
-              Location
+              Availability
             </span>
-            <span className="block text-sm">{siteConfig.location}</span>
+            <span className="block text-sm">{siteConfig.availability.reach}</span>
+            <span className="block text-sm text-muted">
+              {siteConfig.availability.start}
+            </span>
           </span>
         </div>
       </li>

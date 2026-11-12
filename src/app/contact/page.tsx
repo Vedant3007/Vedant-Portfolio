@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatusPill } from "@/components/ui/StatusPill";
-import { heroContent } from "@/content/home";
+import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -25,7 +25,7 @@ export default function ContactPage() {
             description="Send me a message using the form and it will go straight to my inbox. Or reach me directly using any of the details below."
           />
           <div className="mt-6">
-            <StatusPill>{heroContent.availability}</StatusPill>
+            <StatusPill>{siteConfig.availability.summary}</StatusPill>
           </div>
           <ContactCards />
         </div>

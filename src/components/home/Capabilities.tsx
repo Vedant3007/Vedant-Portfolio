@@ -24,16 +24,16 @@ export function Capabilities() {
         <Reveal>
           <SectionHeading
             eyebrow="Capabilities"
-            title="From the service desk to the cloud"
+            title="Core capabilities"
             description="Day-to-day enterprise IT experience, backed by hands-on infrastructure and software projects."
           />
         </Reveal>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {capabilities.map((item, index) => {
+          {capabilities.map((item) => {
             const Icon = icons[item.icon];
             return (
-              <Reveal key={item.title} delay={index * 0.06} className="h-full">
+              <Reveal key={item.title} className="h-full">
                 <Card className="h-full">
                   <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-background text-accent">
                     <Icon className="h-5 w-5" aria-hidden="true" />

@@ -1,7 +1,6 @@
 import { Capabilities } from "@/components/home/Capabilities";
 import { ContactCta } from "@/components/home/ContactCta";
 import { ExperiencePreview } from "@/components/home/ExperiencePreview";
-import { FeaturedProjects } from "@/components/home/FeaturedProjects";
 import { Hero } from "@/components/home/Hero";
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
     <>
       <Hero />
       <Capabilities />
-      <FeaturedProjects />
       <ExperiencePreview />
       <ContactCta />
     </>

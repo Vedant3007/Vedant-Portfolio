@@ -4,11 +4,16 @@ export const siteConfig = {
   title: "Vedant Patel | IT Infrastructure, Cloud & Software Engineering",
   description:
     "Computer Science graduate and IT professional with experience in enterprise IT operations, AWS cloud infrastructure and software engineering.",
-  location: "Adelaide, South Australia",
   copyrightYear: 2026,
   resumeUrl: "/resume/Vedant-Patel-CV.pdf",
   email: "vedantpatel1st@gmail.com",
   phone: "+61 410 612 444",
+  availability: {
+    summary: "Open to graduate and entry-level IT roles",
+    short: "Available across Australia",
+    reach: "Willing to relocate anywhere in Australia",
+    start: "Available to start within one week",
+  },
   nav: [
     { label: "Projects", href: "/projects" },
     { label: "Experience", href: "/experience" },

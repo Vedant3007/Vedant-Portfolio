@@ -13,7 +13,7 @@ export function ExperiencePreview() {
           <SectionHeading
             eyebrow="Experience"
             title="Hands-on enterprise IT"
-            description="Frontline and infrastructure support across 16 Australian sites, backed by the cloud and software projects above."
+            description="Frontline and infrastructure support across 16 Australian sites, backed by hands-on cloud and software projects."
           />
           <div className="mt-6">
             <Button href="/experience" variant="secondary">
@@ -22,7 +22,7 @@ export function ExperiencePreview() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.08}>
+        <Reveal>
           <Card className="p-6 sm:p-8">
             <h3 className="text-xl font-semibold tracking-tight">{featuredRole.role}</h3>
             <p className="mt-1 text-sm text-muted">
