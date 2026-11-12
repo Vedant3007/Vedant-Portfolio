@@ -94,14 +94,14 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <a
+            <Button
               href={siteConfig.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-4 text-base text-muted"
+              newTab
+              variant="secondary"
+              className="my-4 w-full"
             >
               Resume
-            </a>
+            </Button>
           </Container>
         </nav>
       )}
