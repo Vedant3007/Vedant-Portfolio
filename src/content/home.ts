@@ -20,7 +20,7 @@ export const capabilities: ReadonlyArray<{
     icon: "server",
     title: "Enterprise IT operations",
     description:
-      "L1-L3 support across 16 sites using ServiceNow and BMC Remedy, with Active Directory, Microsoft 365 and endpoint provisioning.",
+        "L1-L3 support across 16 sites using ServiceNow and BMC Remedy, with Active Directory, Microsoft 365, Citrix VDI and endpoint provisioning.",
   },
   {
     icon: "cloud",
