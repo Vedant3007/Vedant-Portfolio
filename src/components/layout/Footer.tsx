@@ -6,7 +6,8 @@ export function Footer() {
     <footer className="mt-12 border-t border-border">
       <Container className="flex flex-col gap-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {siteConfig.copyrightYear} {siteConfig.name} · {siteConfig.availability.short}
+          © {siteConfig.copyrightYear} · {siteConfig.name} ·{" "}
+          {siteConfig.availability.short}
         </p>
         <ul className="flex flex-wrap gap-x-5 gap-y-2">
           {profileLinks.map((link) => (

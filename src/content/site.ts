@@ -5,7 +5,9 @@ export const siteConfig = {
   description:
     "Computer Science graduate and IT professional with experience in enterprise IT operations, AWS cloud infrastructure and software engineering.",
   copyrightYear: 2026,
-  resumeUrl: "/resume/Vedant-Patel-CV.pdf",
+  // false = asks search engines not to list the site (recommended while it is for recruiters only).
+  indexable: false as boolean,
+  resumeUrl: "/resume/VedantPatel_CV.pdf",
   email: "vedantpatel1st@gmail.com",
   phone: "+61 410 612 444",
   availability: {

@@ -4,7 +4,7 @@ export const heroContent = {
     "Computer Science graduate with hands-on experience in enterprise IT operations across 16 sites, AWS infrastructure and containerised application deployment.",
   stats: [
     { value: "16", label: "Australian sites supported" },
-    { value: "60+", label: "Incidents resolved monthly, within SLA" },
+    { value: "60+", label: "Incidents resolved monthly" },
     { value: "99.87%", label: "Uptime I contributed to" },
   ],
 } as const;
